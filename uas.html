@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Informasi Penyakit Tuberkulosis (TBC)</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f8fb;
+    color: #333;
+    line-height: 1.7;
+}
+
+/* HEADER */
+header {
+    background: #087f8c;
+    color: white;
+    padding: 25px 8%;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 30px;
+}
+
+header p {
+    margin-top: 5px;
+}
+
+/* NAVIGASI */
+nav {
+    background: #05636d;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 8px 12px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffe082;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(
+        rgba(0,70,80,0.65),
+        rgba(0,70,80,0.65)
+    ),
+    url("https://images.unsplash.com/photo-1584982751601-97dcc096659c?w=1200")
+    center/cover;
+    color: white;
+    text-align: center;
+    padding: 90px 20px;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+/* KONTEN */
+.container {
+    width: 85%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+section {
+    padding: 55px 0;
+}
+
+section h2 {
+    color: #087f8c;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+    color: #05636d;
+    margin-bottom: 10px;
+}
+
+.card ul {
+    padding-left: 25px;
+}
+
+.card ol {
+    padding-left: 25px;
+}
+
+.card a {
+    color: #087f8c;
+    word-break: break-word;
+}
+
+.gambar {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+/* FORM */
+form {
+    max-width: 650px;
+    margin: auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+button {
+    background: #087f8c;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #05636d;
+}
+
+#hasil {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+    background: #05636d;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .container {
+        width: 92%;
+    }
+
+    header h1 {
+        font-size: 23px;
+    }
+
+    .hero h2 {
+        font-size: 27px;
+    }
+
+    nav a {
+        margin: 5px;
+        font-size: 13px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <h1>INFORMASI KESEHATAN</h1>
+    <p>Mengenal dan Mencegah Penyakit Tuberkulosis (TBC)</p>
+</header>
+
+<!-- MENU NAVIGASI -->
+<nav>
+    <a href="#home">Home</a>
+    <a href="#profil">Profil Penyakit</a>
+    <a href="#gejala">Gejala</a>
+    <a href="#penyebab">Penyebab</a>
+    <a href="#pencegahan">Pencegahan</a>
+    <a href="#penanganan">Penanganan</a>
+    <a href="#konsultasi">Konsultasi</a>
+    <a href="#kontak">Kontak</a>
+    <a href="#sumber">Sumber Referensi</a>
+</nav>
+
+<!-- HOME -->
+<div class="hero" id="home">
+    <h2>Kenali Penyakit TBC Sejak Dini</h2>
+    <p>
+        TBC dapat disembuhkan dengan pengobatan yang tepat
+        dan teratur. Mari lindungi diri dan keluarga!
+    </p>
+</div>
+
+<!-- PROFIL PENYAKIT -->
+<section id="profil">
+<div class="container">
+    <h2>Profil Penyakit TBC</h2>
+
+    <div class="card">
+        <h3>Pengertian Penyakit</h3>
+        <p>
+            Tuberkulosis (TBC) adalah penyakit menular yang
+            disebabkan oleh bakteri Mycobacterium tuberculosis.
+            Penyakit ini paling sering menyerang paru-paru,
+            tetapi juga dapat menyerang bagian tubuh lainnya.
+        </p>
+
+        <img class="gambar"
+        src="https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=1000"
+        alt="Ilustrasi pemeriksaan laboratorium">
+
+        <h3>Karakteristik Penyakit</h3>
+        <ul>
+            <li>Disebabkan oleh bakteri Mycobacterium tuberculosis.</li>
+            <li>Dapat menyerang paru-paru dan organ lainnya.</li>
+            <li>Menular melalui udara.</li>
+            <li>Dapat disembuhkan dengan pengobatan yang teratur.</li>
+        </ul>
+
+        <h3>Informasi Umum</h3>
+        <p>
+            TBC merupakan salah satu penyakit infeksi yang
+            membutuhkan pemeriksaan dan pengobatan secara
+            tepat agar tidak menimbulkan komplikasi serta
+            mencegah penularan kepada orang lain.
+        </p>
+    </div>
+</div>
+</section>
+
+<!-- GEJALA -->
+<section id="gejala">
+<div class="container">
+    <h2>Gejala Penyakit TBC</h2>
+
+    <div class="card">
+        <h3>Tanda dan Gejala Penyakit</h3>
+        <ul>
+            <li>Batuk terus-menerus selama 2 minggu atau lebih.</li>
+            <li>Batuk berdahak atau disertai darah.</li>
+            <li>Demam dan berkeringat pada malam hari.</li>
+            <li>Berat badan menurun tanpa sebab yang jelas.</li>
+            <li>Nafsu makan berkurang.</li>
+            <li>Tubuh terasa lemas dan mudah lelah.</li>
+            <li>Nyeri pada bagian dada.</li>
+        </ul>
+
+        <h3>Gejala Awal dan Gejala Lanjutan</h3>
+        <p>
+            Gejala awal TBC dapat berupa batuk, demam ringan,
+            dan tubuh mudah lelah. Jika tidak ditangani,
+            gejala dapat berkembang menjadi batuk berdarah,
+            penurunan berat badan, dan kondisi tubuh semakin lemah.
+        </p>
+    </div>
+</div>
+</section>
+
+<!-- PENYEBAB -->
+<section id="penyebab">
+<div class="container">
+    <h2>Penyebab dan Penularan</h2>
+
+    <div class="card">
+        <h3>Penyebab Penyakit</h3>
+        <p>
+            Penyakit TBC disebabkan oleh bakteri
+            Mycobacterium tuberculosis yang dapat menyerang
+            jaringan paru-paru maupun organ tubuh lainnya.
+        </p>
+
+        <h3>Cara Penularan Penyakit</h3>
+        <p>
+            TBC paru menular melalui udara ketika seseorang
+            yang menderita TBC menular batuk, bersin, berbicara,
+            atau bernyanyi sehingga bakteri dapat terhirup
+            oleh orang lain.
+        </p>
+
+        <h3>Faktor Risiko Penularan</h3>
+        <ul>
+            <li>Kontak erat dengan penderita TBC menular.</li>
+            <li>Tinggal di lingkungan padat dan kurang ventilasi.</li>
+            <li>Memiliki daya tahan tubuh yang lemah.</li>
+            <li>Kurangnya kebersihan dan sirkulasi udara.</li>
+        </ul>
+    </div>
+</div>
+</section>
+
+<!-- PENCEGAHAN -->
+<section id="pencegahan">
+<div class="container">
+    <h2>Pencegahan Penyakit TBC</h2>
+
+    <div class="card">
+        <h3>Cara Mencegah Penularan</h3>
+        <ul>
+            <li>Melakukan pemeriksaan jika mengalami gejala TBC.</li>
+            <li>Menggunakan masker ketika batuk atau sakit.</li>
+            <li>Menutup mulut dan hidung ketika batuk atau bersin.</li>
+            <li>Memastikan ruangan memiliki ventilasi yang baik.</li>
+            <li>Menghindari kontak dekat berkepanjangan di ruang tertutup dengan penderita TBC yang masih menular.</li>
+            <li>Melakukan pemeriksaan kontak erat sesuai anjuran tenaga kesehatan.</li>
+        </ul>
+
+        <h3>Perilaku Hidup Bersih dan Sehat</h3>
+        <ul>
+            <li>Mengonsumsi makanan bergizi seimbang.</li>
+            <li>Berolahraga secara teratur.</li>
+            <li>Menjaga kebersihan lingkungan.</li>
+            <li>Tidak merokok.</li>
+        </ul>
+
+        <h3>Upaya Perlindungan Diri dan Lingkungan</h3>
+        <p>
+            Melakukan imunisasi BCG sesuai jadwal untuk
+            membantu melindungi anak dari bentuk TBC berat,
+            serta menjaga sirkulasi udara dan menerapkan
+            etika batuk.
+        </p>
+    </div>
+</div>
+</section>
+
+<!-- PENANGANAN -->
+<section id="penanganan">
+<div class="container">
+    <h2>Penanganan Penyakit TBC</h2>
+
+    <div class="card">
+        <h3>Informasi Pemeriksaan Penyakit</h3>
+        <p>
+            Pemeriksaan TBC dapat dilakukan melalui pemeriksaan
+            dahak menggunakan tes cepat molekuler (TCM),
+            pemeriksaan rontgen dada, serta pemeriksaan lain
+            sesuai indikasi dan anjuran dokter.
+        </p>
+
+        <h3>Penanganan dan Pengobatan</h3>
+        <ul>
+            <li>Mengonsumsi obat antituberkulosis (OAT) sesuai resep dokter.</li>
+            <li>Menjalani pengobatan sampai selesai sesuai jadwal.</li>
+            <li>Melakukan pemeriksaan dan pemantauan secara rutin.</li>
+            <li>Tidak menghentikan obat tanpa arahan tenaga kesehatan.</li>
+        </ul>
+
+        <h3>Anjuran Mendapatkan Pelayanan Kesehatan</h3>
+        <p>
+            Masyarakat yang mengalami gejala TBC dianjurkan
+            segera mengunjungi Puskesmas, klinik, atau rumah
+            sakit untuk mendapatkan pemeriksaan dan penanganan
+            yang sesuai.
+        </p>
+    </div>
+</div>
+</section>
+
+<!-- KONSULTASI -->
+<section id="konsultasi">
+<div class="container">
+    <h2>Formulir Konsultasi</h2>
+
+    <div class="card">
+        <p style="text-align:center;">
+            Silakan isi formulir berikut apabila ingin
+            menyampaikan pertanyaan seputar penyakit TBC.
+        </p>
+
+        <form id="formKonsultasi">
+
+            <label>Nama Lengkap</label>
+            <input type="text" id="nama"
+            placeholder="Masukkan nama lengkap">
+
+            <label>Email</label>
+            <input type="email" id="email"
+            placeholder="Masukkan alamat email">
+
+            <label>Nomor Telepon</label>
+            <input type="tel" id="telepon"
+            placeholder="Masukkan nomor telepon">
+
+            <label>Pesan / Pertanyaan</label>
+            <textarea id="pesan" rows="5"
+            placeholder="Tuliskan pertanyaan Anda"></textarea>
+
+            <button type="submit">Kirim Konsultasi</button>
+
+            <p id="hasil"></p>
+
+        </form>
+    </div>
+</div>
+</section>
+
+<!-- KONTAK -->
+<section id="kontak">
+<div class="container">
+    <h2>Kontak</h2>
+
+    <div class="card">
+        <h3>Informasi Pengelola Website</h3>
+        <p><b>Nama Website:</b> Informasi Penyakit TBC</p>
+        <p><b>Alamat:</b> Universitas Duta Bangsa Surakarta</p>
+        <p><b>Email:</b> anandaaulia916@gmail.com</p>
+        <p><b>Telepon:</b> 083162322684</p>
+
+        <p>
+            Website ini dibuat sebagai media informasi
+            dan edukasi mengenai penyakit Tuberkulosis (TBC).
+        </p>
+    </div>
+</div>
+</section>
+
+<!-- SUMBER REFERENSI -->
+<section id="sumber">
+<div class="container">
+    <h2>Sumber Referensi</h2>
+
+    <div class="card">
+        <h3>Daftar Sumber Informasi Penyakit TBC</h3>
+
+        <p>
+            Informasi mengenai penyakit Tuberkulosis (TBC)
+            pada website ini disusun berdasarkan sumber
+            resmi dari lembaga kesehatan berikut:
+        </p>
+
+        <ol style="padding-left:25px;">
+
+            <br>
+
+            <li>
+                <b>Kementerian Kesehatan Republik Indonesia.</b>
+                Apa Itu TOSS TBC dan Kenali Gejala TBC.
+                <br>
+                <a href="https://www.kemkes.go.id/id/apa-itu-toss-tbc-dan-kenali-gejala-tbc"
+                target="_blank">
+                Informasi TOSS TBC - Kemenkes RI
+                </a>
+            </li>
+
+            <br>
+
+            <li>
+                <b>World Health Organization (WHO).</b>
+                Tuberculosis.
+                <br>
+                <a href="https://www.who.int/news-room/fact-sheets/detail/tuberculosis"
+                target="_blank">
+                Tuberculosis - WHO
+                </a>
+            </li>
+
+        </ol>
+
+        <p style="margin-top:20px;">
+            <b>Keterangan:</b> Sumber referensi digunakan
+            sebagai dasar penyusunan materi edukasi
+            mengenai penyakit Tuberkulosis (TBC).
+        </p>
+
+    </div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>&copy; 2026 Website Informasi Penyakit TBC</p>
+    <p>Kenali TBC, Cegah Penularannya, Selesaikan Pengobatannya.</p>
+</footer>
+
+<!-- JAVASCRIPT -->
+<script>
+
+document.getElementById("formKonsultasi")
+.addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    let nama = document.getElementById("nama").value.trim();
+    let email = document.getElementById("email").value.trim();
+    let telepon = document.getElementById("telepon").value.trim();
+    let pesan = document.getElementById("pesan").value.trim();
+    let hasil = document.getElementById("hasil");
+
+    if (nama === "" || email === "" ||
+        telepon === "" || pesan === "") {
+
+        hasil.style.color = "red";
+        hasil.innerHTML =
+        "Semua kolom wajib diisi!";
+
+        return;
+    }
+
+    let polaEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!polaEmail.test(email)) {
+        hasil.style.color = "red";
+        hasil.innerHTML =
+        "Format email tidak valid!";
+        return;
+    }
+
+    if (!/^[0-9+\-\s]{8,16}$/.test(telepon)) {
+        hasil.style.color = "red";
+        hasil.innerHTML =
+        "Nomor telepon harus berisi 8-16 digit!";
+        return;
+    }
+
+    hasil.style.color = "green";
+    hasil.innerHTML =
+    "Terima kasih, formulir konsultasi berhasil divalidasi!";
+
+    document.getElementById("formKonsultasi").reset();
+
+});
+
+</script>
+
+</body>
+</html>
